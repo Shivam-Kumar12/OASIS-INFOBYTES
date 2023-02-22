@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tempreature Convertor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+    <center>
+        <h1><strong>Temperature Converter</strong></h1>
+    </center>
+
+    <div class="main">
+
+
+        Degrees : <input class="degree" type="number" id="n1" placeholder="Fahrenheit/Celsius" value='number' /><br />
+        Type :<select class="select" name="convert" id="s1">
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Celcuis">Celcuis</option>
+        </select><br />
+        Result : <input class="result" type="number" id="n2" value="number" placeholder="The Result is:" /><br />
+
+    </div>
+    <div class="button">
+        <button class="button" id="b1">Convert</button>
+        <button class="button" id="b2">Clear</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
