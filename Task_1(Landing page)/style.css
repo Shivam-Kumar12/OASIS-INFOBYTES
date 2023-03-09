@@ -1,0 +1,128 @@
+#all{
+    background-color: rgb(224,224,224);
+  }
+  #contacts{
+    background-color: rgb(169,169,169);
+  }
+  .padding{
+    padding:5%;
+  }
+  .navbar-brand img{
+      width:30px;
+      height:30px;
+  }
+  .padding-top{
+    padding-top:5%;
+  }
+  .padding-top2{
+    padding-top:10%;
+  }
+  .padding-left{
+    padding-left:5%;
+  }
+  .padding-left2{
+    padding-left:15%;
+  }
+  .padding-right{
+    padding-right:5%;
+  }
+  .border-left{
+    margin-left:5%;
+    padding-left:5%;
+    border-left: 1px solid blue;
+  }
+    .carousel-img{
+       height:850px;
+    }
+  .bg_img{
+    background-image: url("https://farm1.staticflickr.com/98/378361638_8e3469f6c2_z.jpg?zz=1");
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  .bg_img1{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Progressive_enhancement_web_design_pyramid_%28HTML%2C_CSS%2C_JS%29.svg/2362px-Progressive_enhancement_web_design_pyramid_%28HTML%2C_CSS%2C_JS%29.svg.png");
+    background-repeat: no-repeat; 
+    background-size:contain;
+  }
+  .bg_img3{
+    background-image: url("https://thetapacademy.com/wp-content/uploads/2022/10/full-stack-web-developer-1024x1024.jpg");
+    background-repeat: no-repeat; 
+    background-size:contain;
+  }
+  .bg_img2{
+    background-image: url("https://riseuplabs.com/wp-content/uploads/2021/07/mobile-application-development-guidelines-riseuplabs.jpg");
+    background-repeat: no-repeat; 
+    background-size:contain;
+  }
+  
+   #card1 {
+      float:right;
+      display:inline;
+    }
+   #card3 {
+      float:left;
+      display:inline;
+    }
+    /* #card2 {
+        float:inline-start;
+        display:inline;
+      } */
+  #card1, #card3 {
+    width:300px;
+  }
+  
+  @media screen and (min-width: 401px) and (max-width: 800px) {
+     .carousel-img{
+       height:400px;
+    }
+    .bg_img1, .bg_img2, .bg_img3{
+      display:none;
+    }
+     #card1, #card2, #card3 {
+      float:left;
+      display:inline;
+       width:200px;
+       font-size:10px;
+       padding:0%;
+    }
+    #pad0{
+      padding:0%;
+    }
+  }
+  @media screen and (max-width: 400px) {
+     .carousel-img{
+       height:250px;
+    }
+    #work{
+      width:30%;
+    }
+    .bg_img1, .bg_img2, .bg_img3{
+      display:none;
+    }
+    #card1, #card2, #card3 {
+      float:none;
+      display:inline;
+      
+    }
+  }
+  
+  
+  /* The element to apply the animation to */
+  #work {
+      opacity:0.5;   
+      -webkit-animation:spin 4s linear infinite;
+      -moz-animation:spin 4s linear infinite;
+      animation:spin 4s linear infinite;
+  }
+  
+  @-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+  }
+  @-webkit-keyframes spin {
+    100% { -webkit-transform: rotate(360deg); } 
+  }
+  @keyframes spin {
+    100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+  }
+  
+  
